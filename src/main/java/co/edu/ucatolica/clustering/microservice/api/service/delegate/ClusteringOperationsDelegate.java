@@ -11,7 +11,9 @@ import co.edu.ucatolica.clustering.microservice.api.model.ExecutionResponse;
 import co.edu.ucatolica.clustering.microservice.api.model.ExecutionResponse.Builder;
 import co.edu.ucatolica.clustering.microservice.api.repository.ClusterMethodConfigRepository;
 import co.edu.ucatolica.clustering.microservice.api.repository.ClusteringExecutionRepository;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ClusteringOperationsDelegate {
 
 	private ClusterMethodConfigRepository clusterMethodConfigRepository;
@@ -38,7 +40,7 @@ public class ClusteringOperationsDelegate {
 		return result.isEmpty()? Optional.empty(): Optional.of(result);
 	}
 	
-	public Optional<ExecutionResponse> getClusteringExecutionResponse(String executionId){
+	public Optional<ExecutionResponse>  getClusteringExecutionResponse(String executionId){
 		
 		return clusteringExecutionRepository
 				.findById(executionId)

@@ -35,7 +35,7 @@ public class HierarchicalAlgorith extends AbstractClusteringAlgorithm implements
 		if (request.getParams().get(ClusteringAlgorithmsConstants.TYPE.name())
 				.equals(ClusteringDIANAParams.DIANA.name())) {
 			this.rServeScriptSource = optionalSource;
-			this.rServeScriptMethod = ClusteringDIANAParams.DIANA.getValue();
+			this.rServeScriptMethod = RServeCommandsConstants.EXEC_DIANA_COMMAND.getValue();
 			this.dataFrameName = ClusteringDIANAParams.DATA_FRAME_VARIABLE.getValue();
 			this.rServeAsignVariables = RServeCommandsConstants
 					.ASSING_VARIABLES_COMMAND
@@ -44,7 +44,7 @@ public class HierarchicalAlgorith extends AbstractClusteringAlgorithm implements
 					.getValue();
 		}
 		
-		this.rServeScriptMethod = ClusteringAGNESParams.AGNES.getValue();
+		this.rServeScriptMethod = RServeCommandsConstants.EXEC_AGENES_COMMAND.getValue();
 		this.dataFrameName = ClusteringAGNESParams.DATA_FRAME_VARIABLE.getValue();
 		this.rServeAsignVariables = RServeCommandsConstants
 				.ASSING_VARIABLES_COMMAND

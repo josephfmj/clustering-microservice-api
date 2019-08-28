@@ -25,7 +25,7 @@ public class ClaraAlgorithm extends AbstractClusteringAlgorithm implements IClus
 	@Override
 	public RserveResponse execClusteringMethod(RServeRequest request) {
 		
-		this.rServeScriptMethod = ClusteringCLARAParams.CLARA.getValue();
+		this.rServeScriptMethod = RServeCommandsConstants.EXEC_CLARA_COMMAND.getValue();
 		this.dataFrameName = ClusteringCLARAParams.DATA_FRAME_VARIABLE.getValue();
 		this.rServeDataFrame = request.getData_frame();
 		this.rServeScriptSource = RServeCommandsConstants

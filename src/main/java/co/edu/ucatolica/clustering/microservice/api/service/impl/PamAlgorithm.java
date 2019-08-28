@@ -25,7 +25,7 @@ public class PamAlgorithm extends AbstractClusteringAlgorithm implements ICluste
 	@Override
 	public RserveResponse execClusteringMethod(RServeRequest request) {
 		
-		this.rServeScriptMethod = ClusteringPAMParams.PAM.getValue();
+		this.rServeScriptMethod = RServeCommandsConstants.EXEC_PAM_COMMAND.getValue();
 		this.dataFrameName = ClusteringPAMParams.DATA_FRAME_VARIABLE.getValue();
 		this.rServeDataFrame = request.getData_frame();
 		this.rServeScriptSource = RServeCommandsConstants

@@ -25,7 +25,7 @@ public class KMeansAlgorithm extends AbstractClusteringAlgorithm implements IClu
 	@Override
 	public RserveResponse execClusteringMethod(RServeRequest request) {
 			
-		this.rServeScriptMethod = ClusteringKMEANSParams.KMEANS.getValue();
+		this.rServeScriptMethod = RServeCommandsConstants.EXEC_KMEANS_COMMAND.getValue();
 		this.dataFrameName = ClusteringKMEANSParams.DATA_FRAME_VARIABLE.getValue();
 		this.rServeDataFrame = request.getData_frame();
 		this.rServeScriptSource = RServeCommandsConstants

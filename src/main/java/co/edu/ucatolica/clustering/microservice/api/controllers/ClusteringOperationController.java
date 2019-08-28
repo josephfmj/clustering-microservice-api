@@ -17,7 +17,8 @@ import co.edu.ucatolica.clustering.microservice.api.model.ClusterMethodConfig;
 import co.edu.ucatolica.clustering.microservice.api.model.ExecutionResponse;
 import co.edu.ucatolica.clustering.microservice.api.service.delegate.ClusteringOperationsDelegate;
 
-@RestController("/operations")
+@RestController
+@RequestMapping("/operations")
 public class ClusteringOperationController {
 	
 	@Autowired

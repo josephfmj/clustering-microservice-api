@@ -90,7 +90,7 @@ public enum RServeCommandsConstants {
 	 * Contructor privado del enum
 	 * @param command el valor de la constante
 	 */
-	private RServeCommandsConstants(String value) {
+	 RServeCommandsConstants(String value) {
 
 		this.value = value;
 	}

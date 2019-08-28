@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 public class ClusterMethodConfig {
 	
 	@Id
-	private ObjectId id;
+	private String id;
 	
 	@Field(value="name")        
 	private String name;
@@ -22,11 +22,11 @@ public class ClusterMethodConfig {
 	@Field(value="params")
 	private Map<String, Object> params;
 
-	public ObjectId getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(ObjectId id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

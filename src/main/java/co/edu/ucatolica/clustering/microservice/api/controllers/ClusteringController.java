@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import co.edu.ucatolica.clustering.microservice.api.model.ClusteringExecutionRequest;
 import co.edu.ucatolica.clustering.microservice.api.service.delegate.ClusteringServiceDelegate;
 
-@RestController("/run")
+@RestController
+@RequestMapping("/run")
 public class ClusteringController {
 
 	@Autowired
