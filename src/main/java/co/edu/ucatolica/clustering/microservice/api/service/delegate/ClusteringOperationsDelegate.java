@@ -30,8 +30,7 @@ public class ClusteringOperationsDelegate {
 
 	public Optional<ClusterMethodConfig> getClusteringConfigbyName(String name) {
 		
-		return clusterMethodConfigRepository.findByName(name)
-				.map(method -> method);
+		return clusterMethodConfigRepository.findByName(name);
 	}
 
 	public Optional<List<ClusterMethodConfig>> getAllClusteringConfig() {

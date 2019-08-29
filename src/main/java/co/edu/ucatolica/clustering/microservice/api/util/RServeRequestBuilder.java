@@ -44,6 +44,8 @@ public class RServeRequestBuilder {
 			rownames=data.get(ROW_NAMES).toArray(new String[0]);
 			data.remove(ROW_NAMES);			
 			
+		} else{
+			 data.remove("");
 		}
 		
 		names=data.keySet().toArray(new String[0]);

@@ -9,7 +9,7 @@ import org.springframework.data.annotation.Id;
 public class ClusteringExecData {
 
 	@Id
-	private ObjectId id;
+	private String id;
 	
 	private String dataId;
 	
@@ -21,10 +21,10 @@ public class ClusteringExecData {
 	
 	private RserveResponse result;
 	
-	public ObjectId getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(ObjectId id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getDataId() {

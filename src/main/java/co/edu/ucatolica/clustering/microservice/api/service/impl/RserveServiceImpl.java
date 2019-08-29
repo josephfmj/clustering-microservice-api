@@ -90,7 +90,7 @@ public class RserveServiceImpl implements IRserveService {
 				.eval(method)
 				.asString();
 		
-		rServerconnection.finalize();
+		//rServerconnection.finalize();
 		
 		return response;
 	}

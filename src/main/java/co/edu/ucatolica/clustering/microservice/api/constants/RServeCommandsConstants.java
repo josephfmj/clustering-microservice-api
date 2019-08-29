@@ -25,7 +25,7 @@ public enum RServeCommandsConstants {
 	/**
 	 * Commando para asigar variables en RServe
 	 */
-	ASSING_VARIABLES_COMMAND("try ( asignarVariables({}), silent = TRUE)") {
+	ASSING_VARIABLES_COMMAND("try (asignarVariables({}), silent = TRUE)") {
 		
 		@Override
 		public String getValue() {

@@ -38,7 +38,7 @@ public enum ClusteringKMEANSParams {
 	/**
 	 * Medida de distancia
 	 */
-	DISTANCE_MEASURE("distance_methods");
+	DISTANCE_MEASURE("distance_method");
 	
 	/**
 	 * Valor del parametro
